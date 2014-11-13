@@ -51,12 +51,17 @@ var RouteGenerator = yeoman.generators.NamedBase.extend({
 
 		createSections: function() {
 
-			for( var i = 0, len = this.sections.length; i < len; i++ ) {
+			var s = this.config.get( 'settings' );
 
-				this.composeWith( 'bw:section', { options: { failSilent: true }, args: this.sections[ i ] }, {
+			if( s ) {
+				
+				for( var i = 0, len = this.sections.length; i < len; i++ ) {
 
-					local: require.resolve( '../section/' )
-				});
+					this.composeWith( 'bw:section', { options: { failSilent: true }, args: this.sections[ i ] }, {
+
+						local: require.resolve( '../section/' )
+					});
+				}
 			}
 		}
 	}
