@@ -1,0 +1,38 @@
+{
+  "name": "generator-bw",
+  "version": "0.0.0",
+  "description": "Yeoman generator",
+  "license": "MIT",
+  "main": "app/index.js",
+  "repository": "bigwheel-framework/generator-bw",
+  "author": {
+    "name": "",
+    "email": "",
+    "url": "https://github.com/bigwheel-framework"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "mocha"
+  },
+  "files": [
+    "app"
+  ],
+  "keywords": [
+    "yeoman-generator"
+  ],
+  "dependencies": {
+    "chalk": "^0.5.0",
+    "generator-ify": "0.0.3",
+    "yeoman-generator": "^0.17.0",
+    "yo": "^1.3.3",
+    "yosay": "^0.3.0"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "peerDependencies": {
+    "yo": ">=1.0.0"
+  }
+}
